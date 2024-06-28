@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://56pb4qbjgqgw"]
+
+[ext_resource type="Script" path="res://Scripts/test_midi.gd" id="1_i1rko"]
+[ext_resource type="AudioStream" uid="uid://cbipefkvrtu6m" path="res://Sonido/TemaDoble.wav" id="2_kkcbs"]
+[ext_resource type="PackedScene" uid="uid://chi1ueecxt425" path="res://Escenas/piano_manager.tscn" id="3_t2g8x"]
+
+[node name="Test_Midi" type="Node2D"]
+script = ExtResource("1_i1rko")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_kkcbs")
+
+[node name="Button_Start" type="Button" parent="."]
+offset_left = 406.0
+offset_top = 157.0
+offset_right = 451.0
+offset_bottom = 188.0
+text = "start"
+
+[node name="Button_Stop" type="Button" parent="."]
+offset_left = 710.0
+offset_top = 161.0
+offset_right = 752.0
+offset_bottom = 192.0
+text = "stop"
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Piano_Manager" parent="." instance=ExtResource("3_t2g8x")]
+position = Vector2(228, 323)
+
+[connection signal="pressed" from="Button_Start" to="." method="_on_button_start_pressed"]
+[connection signal="pressed" from="Button_Stop" to="." method="_on_button_stop_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
