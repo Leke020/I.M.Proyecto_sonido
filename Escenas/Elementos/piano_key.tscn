@@ -23,8 +23,9 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Piano_Key" type="Node2D"]
+[node name="Piano_Key" type="Node2D" groups=["key"]]
 script = ExtResource("1_mmmkr")
+metadata/note_number = 0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(3.1875, 6.09375)

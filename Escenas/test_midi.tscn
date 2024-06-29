@@ -26,8 +26,17 @@ text = "stop"
 
 [node name="Timer" type="Timer" parent="."]
 
-[node name="Piano_Manager" parent="." instance=ExtResource("3_t2g8x")]
-position = Vector2(228, 323)
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Piano_Manager" parent="Control" instance=ExtResource("3_t2g8x")]
+position = Vector2(64, 327)
+scale = Vector2(0.406519, 0.648633)
 
 [connection signal="pressed" from="Button_Start" to="." method="_on_button_start_pressed"]
 [connection signal="pressed" from="Button_Stop" to="." method="_on_button_stop_pressed"]

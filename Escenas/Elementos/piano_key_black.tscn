@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://7tl8bd1ekov2"]
+
+[ext_resource type="Texture2D" uid="uid://dla1bmxfs6d7" path="res://Imagenes/tecla_negra_normal.png" id="1_nislh"]
+[ext_resource type="Texture2D" uid="uid://xie7ig8aqhfa" path="res://Imagenes/tecla_negra_activada.png" id="2_7l6jy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ibxkj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_nislh")
+}],
+"loop": true,
+"name": &"off",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_7l6jy")
+}],
+"loop": true,
+"name": &"on",
+"speed": 5.0
+}]
+
+[node name="Piano_Key_Black" type="Node2D" groups=["key"]]
+scale = Vector2(1.4, 5.76)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ibxkj")
+animation = &"off"

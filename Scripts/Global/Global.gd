@@ -7,7 +7,7 @@ var time_accurancy = 0.1
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	var file2 = "res://Sonido/Json_Text/TemaDoble.txt"
-	#var file2 = "res://Music/Tetris - Tetris MainTheme.txt"
+	#var file2 = "res://Sonido/Json_Text/Tetris - Tetris MainTheme.txt"
 	var file2_as_text = FileAccess.get_file_as_string(file2)
 	var file2_as_dic = JSON.parse_string(file2_as_text)
 	
