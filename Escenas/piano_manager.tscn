@@ -9,319 +9,319 @@ script = ExtResource("1_4n83b")
 
 [node name="white" type="Node" parent="."]
 
-[node name="Piano_Key39" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key1" parent="." instance=ExtResource("2_7p37i")]
 metadata/note_number = 39
 
-[node name="Piano_Key42" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key3" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(51, 0)
 metadata/note_number = 42
 
-[node name="Piano_Key54" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key4" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(102, 0)
 metadata/note_number = 54
 
-[node name="Piano_Key37" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key6" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(153, 0)
 metadata/note_number = 37
 
-[node name="Piano_Key51" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key8" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(204, 0)
 metadata/note_number = 51
 
-[node name="Piano_Key49" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key9" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(255, 0)
 metadata/note_number = 49
 
-[node name="Piano_Key61" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key11" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(306, 0)
 metadata/note_number = 1
 
-[node name="Piano_Key46" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key13" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(357, 0)
 metadata/note_number = 46
 
-[node name="Piano_Key47" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key15" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(408, 0)
 metadata/note_number = 47
 
-[node name="Piano_Key35" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key16" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(459, 0)
 metadata/note_number = 35
 
-[node name="Piano_Key58" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key18" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(510, 0)
 metadata/note_number = 58
 
-[node name="Piano_Key36" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key20" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(561, 0)
 metadata/note_number = 36
 
-[node name="Piano_Key63" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key21" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(612, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key64" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key23" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(663, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key65" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key25" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(714, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key66" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key27" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(765, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key67" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key28" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(816, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key68" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key30" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(867, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key69" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key32" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(918, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key70" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key33" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(969, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key71" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key35" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1020, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key72" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key37" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1071, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key73" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key39" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1122, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key74" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key40" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1173, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key75" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key42" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1224, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key76" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key44" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1275, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key77" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key45" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1326, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key78" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key47" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1377, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key79" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key49" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1428, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key80" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key51" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1479, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key81" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key52" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1530, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key82" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key54" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1581, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key83" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key56" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1632, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key84" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key57" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1683, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key85" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key59" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1734, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key86" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key61" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1785, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key87" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key63" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1836, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key88" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key64" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1887, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key89" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key66" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1938, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key90" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key68" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(1989, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key91" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key69" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(2040, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key92" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key71" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(2091, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key93" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key73" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(2142, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key94" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key75" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(2193, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key95" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key76" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(2244, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key96" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key78" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(2295, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key97" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key80" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(2346, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key98" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key81" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(2397, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key99" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key83" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(2448, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key100" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key85" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(2499, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key101" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key87" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(2550, 0)
 metadata/note_number = 63
 
-[node name="Piano_Key102" parent="." instance=ExtResource("2_7p37i")]
+[node name="Piano_Key88" parent="." instance=ExtResource("2_7p37i")]
 position = Vector2(2601, 0)
 metadata/note_number = 63
 
 [node name="black" type="Node" parent="."]
 
-[node name="Piano_Key_Black" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(25, -108)
+[node name="Piano_Key2" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(25, -49.24)
 
-[node name="Piano_Key_Black2" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(128, -108)
+[node name="Piano_Key5" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(128, -49.24)
 
-[node name="Piano_Key_Black3" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(178, -108)
+[node name="Piano_Key7" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(178, -49.24)
 
-[node name="Piano_Key_Black4" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(280, -108)
+[node name="Piano_Key10" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(280, -49.24)
 
-[node name="Piano_Key_Black5" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(331, -108)
+[node name="Piano_Key12" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(331, -49.24)
 
-[node name="Piano_Key_Black6" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(382, -108)
+[node name="Piano_Key14" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(382, -49.24)
 
-[node name="Piano_Key_Black7" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(484, -108)
+[node name="Piano_Key17" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(484, -49.24)
 
-[node name="Piano_Key_Black8" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(535, -108)
+[node name="Piano_Key19" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(535, -49.24)
 
-[node name="Piano_Key_Black9" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(637, -108)
+[node name="Piano_Key22" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(637, -49.24)
 
-[node name="Piano_Key_Black10" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(688, -108)
+[node name="Piano_Key24" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(688, -49.24)
 
-[node name="Piano_Key_Black11" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(739, -108)
+[node name="Piano_Key26" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(739, -49.24)
 
-[node name="Piano_Key_Black12" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(841, -108)
+[node name="Piano_Key29" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(841, -49.24)
 
-[node name="Piano_Key_Black13" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(892, -108)
+[node name="Piano_Key31" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(892, -49.24)
 
-[node name="Piano_Key_Black14" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(994, -108)
+[node name="Piano_Key34" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(994, -49.24)
 
-[node name="Piano_Key_Black15" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(1045, -108)
+[node name="Piano_Key36" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(1045, -49.24)
 
-[node name="Piano_Key_Black16" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(1096, -108)
+[node name="Piano_Key38" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(1096, -49.24)
 
-[node name="Piano_Key_Black17" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(1198, -108)
+[node name="Piano_Key41" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(1198, -49.24)
 
-[node name="Piano_Key_Black18" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(1250, -108)
+[node name="Piano_Key43" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(1250, -49.24)
 
-[node name="Piano_Key_Black19" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(1351, -108)
+[node name="Piano_Key46" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(1351, -49.24)
 
-[node name="Piano_Key_Black20" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(1402, -108)
+[node name="Piano_Key48" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(1402, -49.24)
 
-[node name="Piano_Key_Black21" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(1453, -108)
+[node name="Piano_Key50" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(1453, -49.24)
 
-[node name="Piano_Key_Black22" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(1555, -108)
+[node name="Piano_Key53" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(1555, -49.24)
 
-[node name="Piano_Key_Black23" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(1606, -108)
+[node name="Piano_Key55" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(1606, -49.24)
 
-[node name="Piano_Key_Black24" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(1708, -108)
+[node name="Piano_Key58" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(1708, -49.24)
 
-[node name="Piano_Key_Black25" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(1759, -108)
+[node name="Piano_Key60" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(1759, -49.24)
 
-[node name="Piano_Key_Black26" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(1811, -108)
+[node name="Piano_Key62" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(1811, -49.24)
 
-[node name="Piano_Key_Black27" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(1913, -107)
+[node name="Piano_Key65" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(1913, -49.24)
 
-[node name="Piano_Key_Black28" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(1964, -107)
+[node name="Piano_Key67" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(1964, -49.24)
 
-[node name="Piano_Key_Black29" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(2065, -107)
+[node name="Piano_Key70" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(2065, -49.24)
 
-[node name="Piano_Key_Black30" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(2116, -107)
+[node name="Piano_Key72" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(2116, -49.24)
 
-[node name="Piano_Key_Black31" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(2166, -107)
+[node name="Piano_Key74" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(2166, -49.24)
 
-[node name="Piano_Key_Black32" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(2270, -107)
+[node name="Piano_Key77" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(2270, -49.24)
 
-[node name="Piano_Key_Black33" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(2320, -107)
+[node name="Piano_Key79" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(2320, -49.24)
 
-[node name="Piano_Key_Black34" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(2422, -107)
+[node name="Piano_Key82" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(2422, -49.24)
 
-[node name="Piano_Key_Black35" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(2474, -107)
+[node name="Piano_Key84" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(2474, -49.24)
 
-[node name="Piano_Key_Black36" parent="." instance=ExtResource("3_kemho")]
-position = Vector2(2525, -107)
+[node name="Piano_Key86" parent="." instance=ExtResource("3_kemho")]
+position = Vector2(2525, -49.24)

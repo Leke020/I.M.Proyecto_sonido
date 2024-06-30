@@ -14,6 +14,7 @@ func play_notes(notes):
 		 
 		
 		get_node("Piano_Key" + note_number).key_on(duration)
+		get_node("Piano_Key" + note_number).disparar()
 		#get_tree().get_nodes_in_group("key" + note_number).key_on(duration)
 		#get_node(get_tree().get_nodes_in_group("key") + note_number).key_on(duration)
 		

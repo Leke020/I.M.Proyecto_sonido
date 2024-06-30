@@ -1,0 +1,21 @@
+[gd_scene load_steps=9 format=3 uid="uid://8i3a5ujlwwaf"]
+
+[ext_resource type="Script" path="res://Scripts/Elementos/bala.gd" id="1_gplqa"]
+[ext_resource type="Texture2D" uid="uid://us5h1jygsuld" path="res://icon.svg" id="1_u61rj"]
+[ext_resource type="Texture2D" uid="uid://5nyuhtds2rrf" path="res://Imagenes/Notas_Musicales/Nota_1.png" id="2_aejvb"]
+[ext_resource type="Texture2D" uid="uid://cumerjnss0d1b" path="res://Imagenes/Notas_Musicales/Nota_2.png" id="3_isx51"]
+[ext_resource type="Texture2D" uid="uid://cqsv5t2sc670o" path="res://Imagenes/Notas_Musicales/Nota_3.png" id="4_ncgj0"]
+[ext_resource type="Texture2D" uid="uid://dlvyudmryyg1a" path="res://Imagenes/Notas_Musicales/Nota_4.png" id="5_xvhbj"]
+[ext_resource type="Texture2D" uid="uid://bvm5fkf2vcqky" path="res://Imagenes/Notas_Musicales/Nota_5.png" id="6_0rpgv"]
+[ext_resource type="Texture2D" uid="uid://cl5blashrwfru" path="res://Imagenes/Notas_Musicales/Nota_6.png" id="7_u6cl6"]
+
+[node name="Bala" type="Node2D"]
+script = ExtResource("1_gplqa")
+images = [ExtResource("2_aejvb"), ExtResource("3_isx51"), ExtResource("4_ncgj0"), ExtResource("5_xvhbj"), ExtResource("6_0rpgv"), ExtResource("7_u6cl6")]
+
+[node name="Icon" type="Sprite2D" parent="."]
+texture = ExtResource("1_u61rj")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]

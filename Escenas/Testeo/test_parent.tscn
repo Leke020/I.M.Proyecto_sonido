@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbcvsn2tmx34i"]
+
+[ext_resource type="Script" path="res://Escenas/Testeo/test_parent.gd" id="1_elp2n"]
+[ext_resource type="PackedScene" uid="uid://dewyxbcuaylwt" path="res://Escenas/Testeo/test_child.tscn" id="2_4dsvc"]
+[ext_resource type="AudioStream" uid="uid://cbipefkvrtu6m" path="res://Sonido/Wav/TemaDoble.wav" id="3_0gnlu"]
+
+[node name="test_parent" type="Node2D"]
+script = ExtResource("1_elp2n")
+
+[node name="test_child" parent="." instance=ExtResource("2_4dsvc")]
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_0gnlu")

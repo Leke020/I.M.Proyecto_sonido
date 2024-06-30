@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dewyxbcuaylwt"]
+
+[ext_resource type="Script" path="res://Escenas/Testeo/test_child.gd" id="1_bna0e"]
+
+[node name="test_child" type="Node2D"]
+script = ExtResource("1_bna0e")

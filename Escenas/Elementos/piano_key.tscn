@@ -1,14 +1,14 @@
 [gd_scene load_steps=5 format=3 uid="uid://e1hb0kna86be"]
 
 [ext_resource type="Script" path="res://Scripts/Elementos/piano_key.gd" id="1_mmmkr"]
-[ext_resource type="Texture2D" uid="uid://b6grdbco0akh5" path="res://Imagenes/tecla_normal.png" id="2_d7wfk"]
-[ext_resource type="Texture2D" uid="uid://cjw6gil47tnpx" path="res://Imagenes/tecla_activada.png" id="3_vwp8t"]
+[ext_resource type="Texture2D" uid="uid://b6grdbco0akh5" path="res://Imagenes/Teclas/tecla_normal.png" id="2_ogh1j"]
+[ext_resource type="Texture2D" uid="uid://cjw6gil47tnpx" path="res://Imagenes/Teclas/tecla_activada.png" id="3_ujemk"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_u78a7"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_d7wfk")
+"texture": ExtResource("2_ogh1j")
 }],
 "loop": true,
 "name": &"off",
@@ -16,7 +16,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_vwp8t")
+"texture": ExtResource("3_ujemk")
 }],
 "loop": true,
 "name": &"on",

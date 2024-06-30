@@ -1,13 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://7tl8bd1ekov2"]
+[gd_scene load_steps=5 format=3 uid="uid://7tl8bd1ekov2"]
 
-[ext_resource type="Texture2D" uid="uid://dla1bmxfs6d7" path="res://Imagenes/tecla_negra_normal.png" id="1_nislh"]
-[ext_resource type="Texture2D" uid="uid://xie7ig8aqhfa" path="res://Imagenes/tecla_negra_activada.png" id="2_7l6jy"]
+[ext_resource type="Script" path="res://Scripts/Elementos/piano_key.gd" id="1_pav54"]
+[ext_resource type="Texture2D" uid="uid://dla1bmxfs6d7" path="res://Imagenes/Teclas/tecla_negra_normal.png" id="2_ac7sk"]
+[ext_resource type="Texture2D" uid="uid://dq1u4n4isj7ae" path="res://Imagenes/Teclas/tecla_negra_activada_v2.png" id="3_cm1ld"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ibxkj"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_nislh")
+"texture": ExtResource("2_ac7sk")
 }],
 "loop": true,
 "name": &"off",
@@ -15,7 +16,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_7l6jy")
+"texture": ExtResource("3_cm1ld")
 }],
 "loop": true,
 "name": &"on",
@@ -23,8 +24,13 @@ animations = [{
 }]
 
 [node name="Piano_Key_Black" type="Node2D" groups=["key"]]
-scale = Vector2(1.4, 5.76)
+script = ExtResource("1_pav54")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.5, 3)
 sprite_frames = SubResource("SpriteFrames_ibxkj")
 animation = &"off"
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
