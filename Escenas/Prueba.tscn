@@ -1,0 +1,85 @@
+[gd_scene load_steps=5 format=3 uid="uid://bieipfm6d6rf1"]
+
+[ext_resource type="PackedScene" uid="uid://b7kb0y2jua455" path="res://Escenas/Players/Player_2/Player_2.tscn" id="1_f6vax"]
+[ext_resource type="Texture2D" uid="uid://us5h1jygsuld" path="res://icon.svg" id="2_l26tg"]
+[ext_resource type="AudioStream" uid="uid://cbipefkvrtu6m" path="res://Sonido/Wav/TemaDoble.wav" id="3_adpr7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6yif3"]
+size = Vector2(65, 68)
+
+[node name="Prueba" type="Node2D"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(-1865, -16)
+stream = ExtResource("3_adpr7")
+attenuation = 1.41422
+panning_strength = 2.3
+
+[node name="Player" parent="." instance=ExtResource("1_f6vax")]
+
+[node name="Area1" type="Area2D" parent="."]
+audio_bus_override = true
+audio_bus_name = &"SFX1"
+
+[node name="Sprite2D" type="Sprite2D" parent="Area1"]
+modulate = Color(1, 0.247059, 1, 1)
+position = Vector2(317, 25)
+scale = Vector2(0.492188, 0.492188)
+texture = ExtResource("2_l26tg")
+flip_v = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area1"]
+position = Vector2(317.5, 25)
+shape = SubResource("RectangleShape2D_6yif3")
+
+[node name="Area2" type="Area2D" parent="."]
+position = Vector2(431, 0)
+audio_bus_override = true
+audio_bus_name = &"SFX2"
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2"]
+modulate = Color(1, 0.247059, 1, 1)
+position = Vector2(317, 25)
+scale = Vector2(0.492188, 0.492188)
+texture = ExtResource("2_l26tg")
+flip_v = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2"]
+position = Vector2(317.5, 25)
+shape = SubResource("RectangleShape2D_6yif3")
+
+[node name="Area3" type="Area2D" parent="."]
+position = Vector2(807, 0)
+audio_bus_override = true
+audio_bus_name = &"BajarVol"
+
+[node name="Sprite2D" type="Sprite2D" parent="Area3"]
+modulate = Color(1, 0.247059, 1, 1)
+position = Vector2(317, 25)
+scale = Vector2(0.492188, 0.492188)
+texture = ExtResource("2_l26tg")
+flip_v = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area3"]
+position = Vector2(317.5, 25)
+shape = SubResource("RectangleShape2D_6yif3")
+
+[node name="AreaStop" type="Area2D" parent="."]
+position = Vector2(-1157, 2)
+audio_bus_override = true
+audio_bus_name = &"BajarVol"
+
+[node name="Sprite2D" type="Sprite2D" parent="AreaStop"]
+modulate = Color(1, 0.247059, 1, 1)
+position = Vector2(317, 25)
+rotation = 0.785398
+scale = Vector2(0.492188, 0.492188)
+texture = ExtResource("2_l26tg")
+flip_v = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaStop"]
+position = Vector2(317.5, 25)
+rotation = 0.785398
+shape = SubResource("RectangleShape2D_6yif3")
+
+[connection signal="body_entered" from="AreaStop" to="Player" method="_on_area_2d_body_entered"]

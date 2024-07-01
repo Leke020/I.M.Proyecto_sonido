@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cncxi2jyv5gdh"
+path="res://.godot/imported/Bitsy theme 2.wav-8b88ce977b8a7861b08a3738619cb869.sample"
+
+[deps]
+
+source_file="res://Sonido/Wav/Bitsy theme 2.wav"
+dest_files=["res://.godot/imported/Bitsy theme 2.wav-8b88ce977b8a7861b08a3738619cb869.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

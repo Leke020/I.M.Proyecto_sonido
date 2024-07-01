@@ -25,13 +25,18 @@ offset_bottom = 130.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Button_Empezar" type="Button" parent="VBox_Botones"]
+[node name="Button_JuegoPiano" type="Button" parent="VBox_Botones"]
 layout_mode = 2
-text = "Empezar"
+text = "Juego Piano"
+
+[node name="Button_Prueba" type="Button" parent="VBox_Botones"]
+layout_mode = 2
+text = "Prueba"
 
 [node name="Button_Salir" type="Button" parent="VBox_Botones"]
 layout_mode = 2
 text = "Salir"
 
-[connection signal="pressed" from="VBox_Botones/Button_Empezar" to="." method="_on_button_empezar_pressed"]
+[connection signal="pressed" from="VBox_Botones/Button_JuegoPiano" to="." method="_on_button_empezar_pressed"]
+[connection signal="pressed" from="VBox_Botones/Button_Prueba" to="." method="_on_button_prueba_pressed"]
 [connection signal="pressed" from="VBox_Botones/Button_Salir" to="." method="_on_button_salir_pressed"]
