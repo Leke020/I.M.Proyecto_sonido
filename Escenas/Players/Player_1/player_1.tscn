@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfb85dcke7oho"]
+
+[ext_resource type="Script" path="res://Scripts/Players/Player_1/player_1.gd" id="1_65key"]
+[ext_resource type="Texture2D" uid="uid://b6grdbco0akh5" path="res://Imagenes/Teclas/tecla_normal.png" id="1_c2sc1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d7j0v"]
+size = Vector2(107.407, 21)
+
+[node name="Player_1" type="Node2D"]
+scale = Vector2(0.54, 0.48)
+script = ExtResource("1_65key")
+
+[node name="Icon" type="Sprite2D" parent="."]
+rotation = 1.5708
+scale = Vector2(1.565, 3.7)
+texture = ExtResource("1_c2sc1")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1.87644e-06, -0.5)
+scale = Vector2(1, 1.0123)
+shape = SubResource("RectangleShape2D_d7j0v")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="tree_entered" from="Area2D/CollisionShape2D" to="." method="_on_collision_shape_2d_tree_entered"]

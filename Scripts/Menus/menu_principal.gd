@@ -13,3 +13,7 @@ func _process(delta):
 
 func _on_button_salir_pressed():
 	get_tree().quit()
+
+
+func _on_button_empezar_pressed():
+	get_tree().change_scene_to_file("res://Escenas/test_midi.tscn")

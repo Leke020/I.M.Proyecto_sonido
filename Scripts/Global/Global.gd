@@ -4,8 +4,15 @@ var notes = {}
 var midis = []
 var time_accurancy = 0.1
 
-var file = "res://Sonido/Json_Text/Tetris - Tetris MainTheme.txt"
+var json_Text = [
+	"res://Sonido/Json_Text/Tetris - Tetris MainTheme.txt",
+	"res://Sonido/Json_Text/TemaDoble.txt"
+]
 
+@export var wavs = []
+
+var file = json_Text[0]
+#var file = "res://Sonido/Json_Text/TemaDoble.txt"
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	#var file = "res://Sonido/Json_Text/TemaDoble.txt"
@@ -20,6 +27,7 @@ func _ready():
 			
 	print(notes)
 	print(midis)
+	print(json_Text[1])
 
 func add_note_to_main_array(note):
 	# { "duration": 0.15, "durationTicks": 240, "midi": 39, "name": "D#2", "ticks": 0, "time": 0, "velocity": 1 }

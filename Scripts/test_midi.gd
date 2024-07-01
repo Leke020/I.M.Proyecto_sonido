@@ -1,6 +1,19 @@
 extends Node2D
 
 var termino = false
+var puntaje = 0
+@onready var _puntajeContador = $CanvasLayer/puntaje
+
+@export var images = []
+@export var songs = []
+
+
+func _ready():
+	var random = RandomNumberGenerator.new().randi_range(0, 4)
+	get_child(0).recibir_Objetivo(random)
+	$Icon.texture = images[random]
+	_puntajeContador.text = str(puntaje)
+	print(random)
 
 func _on_button_start_pressed():
 	termino = false
@@ -27,3 +40,14 @@ func _on_timer_timeout():
 func _on_music_finished():
 	termino = true
 
+func sumar_Puntaje():
+	puntaje += 10
+	_puntajeContador.text = str(puntaje)
+
+func restar_Puntaje():
+	puntaje -= 10
+	_puntajeContador.text = str(puntaje)
+
+func pausa():
+	$Menu_Pausa.visible = true
+	get_tree().paused = true

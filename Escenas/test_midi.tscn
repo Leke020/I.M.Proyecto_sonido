@@ -1,34 +1,69 @@
-[gd_scene load_steps=4 format=3 uid="uid://56pb4qbjgqgw"]
+[gd_scene load_steps=12 format=3 uid="uid://56pb4qbjgqgw"]
 
 [ext_resource type="Script" path="res://Scripts/test_midi.gd" id="1_i1rko"]
 [ext_resource type="AudioStream" uid="uid://mrhriclopq3" path="res://Sonido/Wav/Tetris - Tetris Main Theme.wav" id="2_i8uhi"]
+[ext_resource type="Texture2D" uid="uid://5nyuhtds2rrf" path="res://Imagenes/Notas_Musicales/Nota_1.png" id="2_sohec"]
+[ext_resource type="Texture2D" uid="uid://cumerjnss0d1b" path="res://Imagenes/Notas_Musicales/Nota_2.png" id="3_0fuiy"]
 [ext_resource type="PackedScene" uid="uid://chi1ueecxt425" path="res://Escenas/piano_manager.tscn" id="3_t2g8x"]
+[ext_resource type="PackedScene" uid="uid://dfb85dcke7oho" path="res://Escenas/Players/Player_1/player_1.tscn" id="4_7hti7"]
+[ext_resource type="Texture2D" uid="uid://cqsv5t2sc670o" path="res://Imagenes/Notas_Musicales/Nota_3.png" id="4_m86mf"]
+[ext_resource type="Texture2D" uid="uid://dlvyudmryyg1a" path="res://Imagenes/Notas_Musicales/Nota_4.png" id="5_kqm6o"]
+[ext_resource type="Texture2D" uid="uid://us5h1jygsuld" path="res://icon.svg" id="5_rvaxg"]
+[ext_resource type="PackedScene" uid="uid://mt2u52mugnhc" path="res://Escenas/Menus/menu_pausa.tscn" id="6_2f6kd"]
+[ext_resource type="Texture2D" uid="uid://bvm5fkf2vcqky" path="res://Imagenes/Notas_Musicales/Nota_5.png" id="6_umh5g"]
 
 [node name="Test_Midi" type="Node2D"]
 script = ExtResource("1_i1rko")
+images = [ExtResource("2_sohec"), ExtResource("3_0fuiy"), ExtResource("4_m86mf"), ExtResource("5_kqm6o"), ExtResource("6_umh5g")]
+
+[node name="Player_1" parent="." instance=ExtResource("4_7hti7")]
+position = Vector2(667, 647)
+velocidad = 15
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_i8uhi")
 
 [node name="Button_Start" type="Button" parent="."]
-offset_left = 406.0
-offset_top = 157.0
-offset_right = 451.0
-offset_bottom = 188.0
+offset_left = 417.0
+offset_top = 672.0
+offset_right = 462.0
+offset_bottom = 703.0
 text = "start"
 
 [node name="Button_Stop" type="Button" parent="."]
-offset_left = 710.0
-offset_top = 161.0
-offset_right = 752.0
-offset_bottom = 192.0
+offset_left = 778.0
+offset_top = 680.0
+offset_right = 820.0
+offset_bottom = 711.0
 text = "stop"
 
 [node name="Timer" type="Timer" parent="."]
 
 [node name="Piano_Manager" parent="." instance=ExtResource("3_t2g8x")]
-position = Vector2(64, 63)
-scale = Vector2(0.406519, 0.648633)
+position = Vector2(11, 48)
+scale = Vector2(0.483, 0.5)
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(1250.25, 686.75)
+scale = Vector2(0.457031, 0.496093)
+texture = ExtResource("5_rvaxg")
+
+[node name="Menu_Pausa" parent="." instance=ExtResource("6_2f6kd")]
+offset_left = 606.0
+offset_top = 343.0
+offset_right = 606.0
+offset_bottom = 343.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="puntaje" type="Label" parent="CanvasLayer"]
+offset_left = 1.0
+offset_top = 695.0
+offset_right = 41.0
+offset_bottom = 718.0
+text = "0"
+horizontal_alignment = 1
 
 [connection signal="finished" from="Music" to="." method="_on_music_finished"]
 [connection signal="pressed" from="Button_Start" to="." method="_on_button_start_pressed"]
