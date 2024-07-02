@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://56pb4qbjgqgw"]
+[gd_scene load_steps=13 format=3 uid="uid://56pb4qbjgqgw"]
 
 [ext_resource type="Script" path="res://Scripts/test_midi.gd" id="1_i1rko"]
 [ext_resource type="AudioStream" uid="uid://mrhriclopq3" path="res://Sonido/Wav/Tetris - Tetris Main Theme.wav" id="2_i8uhi"]
@@ -11,10 +11,12 @@
 [ext_resource type="Texture2D" uid="uid://us5h1jygsuld" path="res://icon.svg" id="5_rvaxg"]
 [ext_resource type="PackedScene" uid="uid://mt2u52mugnhc" path="res://Escenas/Menus/menu_pausa.tscn" id="6_2f6kd"]
 [ext_resource type="Texture2D" uid="uid://bvm5fkf2vcqky" path="res://Imagenes/Notas_Musicales/Nota_5.png" id="6_umh5g"]
+[ext_resource type="AudioStream" uid="uid://cbipefkvrtu6m" path="res://Sonido/Wav/TemaDoble.wav" id="8_27w4x"]
 
 [node name="Test_Midi" type="Node2D"]
 script = ExtResource("1_i1rko")
 images = [ExtResource("2_sohec"), ExtResource("3_0fuiy"), ExtResource("4_m86mf"), ExtResource("5_kqm6o"), ExtResource("6_umh5g")]
+songs = [ExtResource("2_i8uhi"), ExtResource("8_27w4x"), null]
 
 [node name="Player_1" parent="." instance=ExtResource("4_7hti7")]
 position = Vector2(667, 647)
@@ -22,20 +24,6 @@ velocidad = 15
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_i8uhi")
-
-[node name="Button_Start" type="Button" parent="."]
-offset_left = 417.0
-offset_top = 672.0
-offset_right = 462.0
-offset_bottom = 703.0
-text = "start"
-
-[node name="Button_Stop" type="Button" parent="."]
-offset_left = 778.0
-offset_top = 680.0
-offset_right = 820.0
-offset_bottom = 711.0
-text = "stop"
 
 [node name="Timer" type="Timer" parent="."]
 
@@ -58,14 +46,37 @@ metadata/_edit_use_anchors_ = true
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="puntaje" type="Label" parent="CanvasLayer"]
-offset_left = 1.0
-offset_top = 695.0
-offset_right = 41.0
-offset_bottom = 718.0
+offset_left = 6.0
+offset_top = 661.0
+offset_right = 46.0
+offset_bottom = 684.0
+scale = Vector2(3.74662, 2.254)
 text = "0"
 horizontal_alignment = 1
 
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 625.0
+offset_top = 362.0
+offset_right = 665.0
+offset_bottom = 402.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button_Start" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "start"
+
+[node name="Button_Stop" type="Button" parent="Control/VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "stop"
+
 [connection signal="finished" from="Music" to="." method="_on_music_finished"]
-[connection signal="pressed" from="Button_Start" to="." method="_on_button_start_pressed"]
-[connection signal="pressed" from="Button_Stop" to="." method="_on_button_stop_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Control/VBoxContainer/Button_Start" to="." method="_on_button_start_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button_Stop" to="." method="_on_button_stop_pressed"]

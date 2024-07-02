@@ -7,7 +7,6 @@ var puntaje = 0
 @export var images = []
 @export var songs = []
 
-
 func _ready():
 	var random = RandomNumberGenerator.new().randi_range(0, 4)
 	get_child(0).recibir_Objetivo(random)
@@ -16,7 +15,9 @@ func _ready():
 	print(random)
 
 func _on_button_start_pressed():
+	$Control/VBoxContainer.visible =  not $Control/VBoxContainer.visible
 	termino = false
+	
 	$Timer.start(Global.time_accurancy)
 	
 	if Global.notes.has("0"):
@@ -39,6 +40,7 @@ func _on_timer_timeout():
 
 func _on_music_finished():
 	termino = true
+	$Control/VBoxContainer.visible =  not $Control/VBoxContainer.visible
 
 func sumar_Puntaje():
 	puntaje += 10

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://yxmgvh5veq4e"
+path="res://.godot/imported/Bitsy theme 2.ogg-19c3af3107a5b17762f517982f5b0d78.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sonido/Ogg/Bitsy theme 2.ogg"
+dest_files=["res://.godot/imported/Bitsy theme 2.ogg-19c3af3107a5b17762f517982f5b0d78.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

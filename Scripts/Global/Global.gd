@@ -4,12 +4,15 @@ var notes = {}
 var midis = []
 var time_accurancy = 0.1
 
+var random
+
 var json_Text = [
 	"res://Sonido/Json_Text/Tetris - Tetris MainTheme.txt",
-	"res://Sonido/Json_Text/TemaDoble.txt"
+	"res://Sonido/Json_Text/TemaDoble.txt",
+	"res://Sonido/Json_Text/Pause Super Smash Bros Brawl - King Dededes Theme.txt"
 ]
 
-@export var wavs = []
+
 
 var file = json_Text[0]
 #var file = "res://Sonido/Json_Text/TemaDoble.txt"
@@ -44,5 +47,5 @@ func add_midi_to_main_array(note):
 		midis.append(midi)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func seleccionar():
+	random = RandomNumberGenerator.new().randi_range(0, 4)
